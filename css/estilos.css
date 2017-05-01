@@ -1,0 +1,192 @@
+body, html, h2{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    font-family: sans-serif;
+    color:#333;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: .9em;
+}
+
+.fila{
+    width: 90%;
+    margin: 1em auto;
+    
+    overflow: hidden;
+}
+
+.columna{
+    
+    background: lightblue;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 2%;
+    padding:1em 0;
+    width: 100%;
+}
+
+
+
+/*SMALL GRID*/
+@media (min-width: 480px){
+    /* 4 y 6COLUMNAS SON DOS EN SMALL*/
+    
+    .cuatro-columnas .columna,
+     .seis-columnas .columna{
+        width: 49%;
+    }
+    .cuatro-columnas .columna:nth-child(2n),
+    .seis-columnas .columna:nth-child(2n){
+        margin-right: 0;
+    }
+    
+    /* 12 COLUMNAS SEAN 3 COLUMNAS*/
+.doce-columnas .columna{
+    width: 32%;
+}
+
+.doce-columnas .columna:nth-child(3n) {
+    margin-right: 0;
+}
+    
+    
+    
+    
+}
+
+/*MEDIUM GRID*/
+@media (min-width: 768px){
+    
+    /* 3 COLUMNAS*/
+.tres-columnas .columna{
+    width: 32%;
+}
+
+.tres-columnas .columna:nth-child(3n) {
+    margin-right: 0;
+}
+    
+/* 12 COLUMNAS SON 4 EN MEDIUM*/
+.cuatro-columnas .columna{
+    width:23.5%;
+}
+
+.cuatro-columnas .columna:nth-child(2n) {
+    margin-right: 2%;
+}    
+    
+.cuatro-columnas .columna:nth-child(4n) {
+    margin-right: 0;
+}
+
+ 
+    /*RIGHT Y LEFT SIDEBAR*/
+
+.right-sidebar .sidebar, 
+.left-sidebar .sidebar{
+    width: 23.5%;
+    
+}
+
+.right-sidebar .content, 
+.left-sidebar .content{
+    
+    width: 74.5%;
+}
+
+.right-sidebar .sidebar{
+    margin-right: 0;
+    }
+.left-sidebar .content{
+    margin: 0;
+    }  
+    
+
+/* 6 COLUMNAS*/
+
+.seis-columnas .columna {
+    
+    width: 15%;
+}
+
+.seis-columnas .columna:nth-child(2n){
+    margin-right: 2%;
+}
+
+.seis-columnas .columna:nth-child(6n){
+    margin-right: 0;
+}
+
+/* DOCE COLUMNAS SON 4 COLUMNAS EN MEDIUM*/
+.doce-columnas .columna{
+    width:23.5%;
+}
+.doce-columnas .columna:nth-child(3n) {
+    margin-right: 2%;
+}
+      
+.doce-columnas .columna:nth-child(4n) {
+    margin-right: 0;
+}
+    
+}
+
+/*LARGE GRID*/
+
+@media (min-width: 1024px){
+    /* 2 COLUMNAS*/
+.dos-columnas .columna{
+    width: 49%;
+        
+}
+
+.dos-columnas .columna:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+/* 4 COLUMNAS*/
+.cuatro-columnas .columna{
+    width:23.5%;
+}
+
+.cuatro-columnas .columna:nth-child(2n) {
+    margin-right: 2%;
+}    
+    
+.cuatro-columnas .columna:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* 6 COLUMNAS*/
+
+.seis-columnas .columna {
+    
+    width: 15%;
+}
+
+.seis-columnas .columna:nth-child(6n){
+    margin-right: 0;
+}
+
+/* 12 COLUMNAS*/
+.doce-columnas .columna{
+    width: 6.5%;
+}
+    
+.doce-columnas .columna:nth-child(4n) {
+    margin-right: 2%;
+}
+
+.doce-columnas .columna:nth-child(12n){
+    margin-right: 0;
+}
+
+
